@@ -68,8 +68,8 @@
   }
     
   .header__menu li a:hover {
-    color: #dcf745; /* Change text color for better visibility */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #dcf745; 
+    transition: color 0.3s ease;
     }
 
   

@@ -9,8 +9,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    position: relative; /* Crucial for the overlay to align */
-    z-index: 0; /* Ensure it’s behind any other layers */
+    position: relative; 
+    z-index: 0;
     min-height: 104%;
 }
 
@@ -25,14 +25,14 @@
 }
 
 .hero-image__overlay {
-    position: absolute; /* Ensure absolute positioning */
-    inset: 0; /* Make it fill the parent */
-    width: 90%; /* Full width */
-    height: 92%; /* Full height */
-    background-color: var(--primary-color); /* Overlay color */
-    z-index: -1; /* Adjust z-index */
-    opacity: 0.8; /* Set transparency */
-    pointer-events: none; /* Prevent interference with user interactions */
+    position: absolute;
+    inset: 0; 
+    width: 90%; 
+    height: 92%; 
+    background-color: var(--primary-color); 
+    z-index: -1;
+    opacity: 0.8; 
+    pointer-events: none; 
 }
 
 .hero-image h2 {
@@ -73,7 +73,6 @@
 
 .hero-content-info p {
     margin: 50px 25px 0 0; 
-    /* [top] [right] [bottom] [left] */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -99,11 +98,11 @@
     border-radius: 36px;
     min-width: 180px;
     outline: none;
-    border: 2px solid transparent; /* Default border (invisible) */
-    background-color: transparent; /* Make the button transparent */
+    border: 2px solid transparent;
+    background-color: transparent;
 
-    border-color: #fff; /* Add white border */
-    color: #ffffff; /* Initial text color */
+    border-color: #fff;
+    color: #ffffff; 
     cursor: pointer;
     justify-content: flex-end;
 
@@ -112,19 +111,19 @@
     font-size: 17px;
     line-height: 23px;
 
-    transition: all 0.3s ease; /* Smooth transition for all effects */
+    transition: all 0.3s ease; 
 }
 
 /* Hover Effect */
 .hero-content__programs-button:hover, .hero-content__contact-button:hover {
-    background-color: #ffffff; /* Initial background color */
-    color: #000000; /* Change text color to white */
+    background-color: #ffffff; 
+    color: #000000; 
 }
 
 /* Click Effect (Active State) */
 .hero-content__programs-button:active, .hero-content__contact-button:active {
-    transform: scale(0.95); /* Slightly reduce size to simulate click */
-    opacity: 0.9; /* Slightly reduce opacity for depth */
+    transform: scale(0.95); 
+    opacity: 0.9; 
 }
 
 .hero {
@@ -257,7 +256,7 @@
     }
 }
 
-/* Mobile landscape and tablet portrait */
+
 @media screen and (max-width: 900px) {
     .hero {
         flex-direction: column;

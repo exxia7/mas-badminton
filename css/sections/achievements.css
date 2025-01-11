@@ -17,62 +17,59 @@
 }
 
 .s2024-2025 {
-    margin: 0 auto; /* Center container */
+    margin: 0 auto; 
     display: flex;
-    flex-direction: row; /* Default layout for larger screens */
-    gap: 2rem; /* Space between items */
+    flex-direction: row;
+    gap: 2rem; 
     justify-content: center;
     max-width: 1000px;
-
-    padding-bottom: 0; /* Ensure no padding at the bottom */
+    padding-bottom: 0; 
 }
 
-
 .picture-button {
-    flex: 0 0 375px; /* Fixed width of 400px */
+    flex: 0 0 375px;
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 8px;
-    position: relative; /* Allows positioning of text on top of the image */
-    width: 300px; /* Set to 100% or a specific width, e.g., 400px */
-    max-width: 500px; /* Optional: Limits maximum width for better layout control */
-    height: auto; /* Adjust height based on the image aspect ratio */
-    overflow: hidden; /* Ensures no content overflows the container */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
+    position: relative;
+    width: 300px;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .background-image {
-    width: 100%; /* Makes the image responsive */
+    width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Ensures the image scales properly to fill the container */
+    object-fit: cover;
 }
 
 .overlay-text {
-    position: absolute; /* Position relative to the container */
-    bottom: 0; /* Anchors the text to the bottom of the container */
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Adds a gradient effect */
-    color: white; /* Text color for contrast */
-    box-sizing: border-box; /* Ensures padding doesn’t affect width */
-    text-align: left; /* Aligns text to the left */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    box-sizing: border-box;
+    text-align: left;
 }
 
 .overlay-text p {
     font-family: "Poppins";
-    font-size: 16px; /* Smaller font for the date or secondary info */
+    font-size: 16px;
     margin: 0;
 }
 
 .overlay-text h3 {
     font-family: "Poppins";
-    font-size: 20px; /* Larger font for the title */
+    font-size: 20px;
     margin: 5px 0 0;
     font-weight: 600;
 }
-
 
 @media (max-width: 768px) {
     .s2024-2025 {
@@ -90,7 +87,7 @@
     }
 
     .picture-button:last-child {
-        margin-bottom: 0;  /* Ensure last item has no bottom margin */
+        margin-bottom: 0;
     }
 
     .background-image {

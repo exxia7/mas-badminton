@@ -160,7 +160,6 @@
     text-align: center;
 }
 
-/* Responsive Styles for Competition Section */
 @media (max-width: 768px) {
     .comp__teams {
         text-align: center;

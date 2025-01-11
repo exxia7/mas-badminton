@@ -113,7 +113,7 @@
     margin-top: 10px;
 }
 
-/* Learn more button */
+
 .partners-learn-more {
     background-color: transparent;
     color: #ffffff;
@@ -147,7 +147,7 @@
 
 .contact-item span {
     font-weight: bold;
-    color: #bfcf64; /* Highlight the label for visibility */
+    color: #bfcf64; 
 }
 
 .become-partner-card {
@@ -155,7 +155,7 @@
     max-width: 580px;
 }
 
-/* Responsive Styles for Programs */
+
 @media (max-width: 768px) {
     .partners h1 {
         text-align: center;
