@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/mas-icon.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>MAS Badminton</title>
+</head>
+<body class="index-page">
+  <!-- HEADER SECTION -->
+  <header>
+    <nav class="header__nav">
+        <!-- Logo Section -->
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2); z-index: 50;" data-aos="fade-down"/>
+          </a>
+          <div class="header__logo-overlay" style="background-color: var(--primary-color);"></div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <ul class="header__menu-mobile" style="background: #456c84;"> 
+          <li>
+            <button id="menuToggle" style="background: #456c84; border: none; padding: 0; cursor: pointer;" data-aos="fade-down">
+              <img src="assets/menu.svg" alt="menu"/>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Full Menu -->
+        <ul class="header__menu" id="headerMenu" data-aos="fade-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="coaches.html">Coaches</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="partners.html">Partners</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+  
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-image" >
+      <img src="assets/player-maas (1).png" alt="jump-smash" data-aos="fade-right"/>
+      <div class="hero-image__overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-content-info" >
+        <img src="assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2); width: 550px;"/>
+        <p>
+          At MAS, we are dedicated 
+          to providing top-quality badminton coaching and training 
+          for players of all levels. 
+          <br />
+          <br />
+          Your badminton journey begins with MAS! 
+        </p>
+        
+        <div class="hero-content__buttons">
+          <a href="programs.html">
+            <button class="hero-content__programs-button">
+              Our Programs</button>
+          </a>
+          <a href="#contact">
+            <button class="hero-content__contact-button">
+              Contact Us
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES SECTION -->
+  <section class="services" id="services">
+    <h1>OUR SERVICES</h1>
+    <div class="services__info">
+
+      <!-- private lesson info -->
+      <div class="services__info-private">
+        <img src="assets/private.png">
+        <h1>Private Lessons</h1>
+        <hr>
+        <p>Personalized coaching for players of all levels</p>
+          <ul>
+            <li>learn proper skills, technique, and footwork</li>
+            <li>tailored and detailed feedback to improve performance</li>
+          </ul>
+      </div>
+
+      <!-- recreational team info -->
+      <div class="services__info-rec">
+        <img src="assets/rec-team.png">
+        <h1>Recreational Training</h1>
+        <hr>
+        <p>Recreational group classes for beginner and amateur players</p>
+        <ul>
+          <li>develop fundamental skills and techniques</li>
+          <li>develop interest in badminton, balancing learning and fun</li>
+        </ul>
+      </div>
+
+      <!-- competition team info -->
+      <div class="services__info-comp">
+        <img src="assets/comp-team.png">
+        <h1>Competition Training</h1>
+        <hr>
+        <p>High-intensity team training for competition players</p>
+        <ul>
+          <li>intensive drills, match play, and physical conditioning</li>
+          <li>prepare for provincial, national, and internatioal tournaments</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- learn more button -->
+    <div class="services__button">
+      <a href="programs.html">
+        <button class="services__button-learn-more-button">
+          LEARN MORE ABOUT OUR PROGRAMS > </button>
+      </a>
+    </div>
+  </section>
+
+  <br>
+
+  <!-- LOCATION SECTION -->
+  <section class="venue">
+    <h1>LOCATION</h1>
+
+    <!-- image carousel -->
+    <div class="venue__details">
+      <div class="venue__details-courts__carousel">
+        <div class="venue__details-courts__carousel__images">
+          <img src="assets/courts diagonal.webp" alt="court1">
+          <img src="assets/courts straight.webp" alt="court2">
+        </div>
+        <button class="carousel__button carousel__button--prev">
+          <img src="assets/left-arrow.png" style="width: 20px; filter: invert(1) brightness(2);">
+        </button>
+        <button class="carousel__button carousel__button--next">
+          <img src="assets/left-arrow.png" style="width: 20px; filter: invert(1) brightness(2); transform: scaleX(-1);">
+        </button>
+      </div>
+
+      <!-- maps api -->
+      <div class="venue__details-location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2874.61663
+        72437615!2d-79.26623732354747!3d43.90520607109134!2m3!1f0!2f0!3f0!3m2!1i1024!
+        2i768!4f13.1!3m3!1m2!1s0x89d529aed21f5307%3A0x9af865d5da59d4f6!2sMAS%20Badmin
+        ton%20Club!5e0!3m2!1sen!2sca!4v1735237666972!5m2!1sen!2sca"></iframe>
+      </div>
+
+      <!-- address section -->
+      <div class="venue__details-address">
+        <div class="venue__details__address-text">
+            <strong> Address: <br>
+            1330 Castemore Ave
+            <br>
+            Markham, ON, L6E 1A4</strong>
+        </div>
+        <p>          
+          Please enter at the back of the building through the blue door next to the Sports Complex sign.
+          <br><br>
+          We hope to see you soon!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <!-- contact section -->
+  <section class="contact" id="contact">
+    <h1>CONTACT US</h1>
+    <div class="media-body">
+      <div class="not-wechat">
+          <p>Sign up today!</p>
+          <p>Contact us through email or WeChat for any inquiries or to book a lesson.</p>
+          <div class="contact__body__socials">
+              <p>Email: mas.bctoronto@gmail.com</p>
+              <div class="ig-fb">
+                <a href="https://www.instagram.com/mas.badmintonclub/">
+                  <img src="assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/people/MAS-Badminton-Club/61559296734803/">
+                  <img src="assets/facebook.png" alt="Facebook">
+                </a>
+              </div>
+          </div>
+      </div>
+      <div class="contact__body__socials-info-wechat">
+          <p>WeChat ID: MasBadminton</p>
+          <img src="assets/wechat.jpg" alt="WeChat QR Code">
+      </div>
+    </div>
+</section>
+
+  <br>
+  <hr>
+
+  <section class="footer">
+    <p>@ 2025 Mas Badminton</p>
+    <p>mas.bctoronto@gmail.com</p>
+    <p>1330 Castemore Ave, Markham, ON, L6E 1A4</p>
+  </section>
+
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>

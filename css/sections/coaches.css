@@ -1,0 +1,101 @@
+
+.coaches {
+    padding: 0rem 2rem;
+    margin-top: 3rem;
+}
+
+body {
+    margin: 0; /* Prevent default body margins */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.coaches h1 {
+    text-align: left;
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+    margin-left: 10px;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.coach-card {
+    background-color: #ffffff0d; /* Transparent white for background */
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Consistent spacing between image and text */
+    margin-bottom: 40px; /* Space between cards */
+    max-width: 100%; /* Prevent overflow */
+    box-sizing: border-box;
+}
+
+.coach-img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.coach-img img {
+    width: 100%; /* Ensure the image fully fits inside its container */
+    border-radius: 12px; /* Optional rounded corners */
+    object-fit: cover; /* Keeps the image aspect ratio */
+}
+
+.coach-text {
+    flex: 1; /* Allow the text section to take up remaining space */
+    color: #fff; /* Ensure text color matches design */
+}
+
+.coach-text h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+.coach-text h3 {
+    color: #ffffffa9;
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.coach-text p {
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .coaches h1 {
+        text-align: center;
+    }
+    
+    .coach-card {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center the content */
+        text-align: center; /* Center the text */
+    }
+
+    .coach-img {
+        margin-right: 0; /* Remove right margin to avoid unnecessary spacing */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .coach-text h2, .coach-text h3 {
+        text-align: center; /* Center-align the text */
+    }
+
+    .coach-text p {
+        text-align: left;
+    }
+
+    .coach-img img {
+        width: 150px; /* Adjust image size for smaller screens */
+        border-radius: 8px; /* Optional: Reduce border radius for smaller screens */
+    }
+}
