@@ -148,19 +148,19 @@
 
   .services__info {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Optional: Vertically center content */
-    margin: 20px; /* Add margins for split-screen */
-    padding: 0 15px; /* Add padding to keep spacing */
-    gap: 20px; /* Space between items */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 20px; 
+    padding: 0 15px; 
+    gap: 20px; 
     grid-template-columns: 1fr;
   }
 
   .services__info > div {
-    width: 100%; /* Items take up 90% of the parent container width */
-    max-width: 500px; /* Limit the maximum width for consistency */
-    text-align: center; /* Center the text inside the boxes */
+    width: 100%; 
+    max-width: 500px; 
+    text-align: center; 
   }
 
   .services__button {
@@ -172,4 +172,3 @@
     text-align: center;
   }
 }
-/* END: services media queries */
