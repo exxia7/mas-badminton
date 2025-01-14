@@ -18,15 +18,15 @@
             <!-- Logo Section -->
             <div class="header__logo">
                 <a href="../index.html">
-                    <img src="../assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2);"/>
+                    <img src="../assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2); z-index: 50;"/>
                 </a>
-                <div class="header__logo-overlay"></div>
+                <div class="header__logo-overlay" style="background-color: var(--primary-color);"></div>
             </div>
 
             <!-- Mobile Menu Button -->
-            <ul class="header__menu-mobile"> 
+            <ul class="header__menu-mobile" style="background: #456c84;"> 
                 <li>
-                    <button id="menuToggle" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <button id="menuToggle" style="background: #456c84; border: none; padding: 0; cursor: pointer;">
                         <img src="../assets/menu.svg" alt="menu"/>
                     </button>
                 </li>
@@ -44,10 +44,10 @@
     </header>
 
     <section class="programs">
-        <h1>PROGRAMS</h1>
+        <h1 data-aos="fade-up">PROGRAMS</h1>
         <div class="programs__grid">
             <!-- Private Lessons Card -->
-            <div class="program-card">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="program-icon">
                     <img src="../assets/private.png" alt="Private Lessons Icon"/>
                 </div>
@@ -63,7 +63,7 @@
             </div>
     
             <!-- Recreational Training Card -->
-            <div class="program-card">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="program-icon">
                     <img src="../assets/rec-team.png" alt="Recreational Training Icon"/>
                 </div>
@@ -79,7 +79,7 @@
             </div>
     
             <!-- Competition Training Card -->
-            <div class="program-card">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="program-icon">
                     <img src="../assets/comp-team.png" alt="Competition Training Icon"/>
                 </div>
@@ -95,7 +95,7 @@
             </div>
         </div>
     
-        <div class="programs__contact">
+        <div class="programs__contact" data-aos="fade-up" data-aos-delay="400">
             <p>Players interested in joining a team higher than beginner group must complete a 5-minute skill assessment 
                 with a coach, who will evaluate your abilities to find a suitable team for your level.
             </p>
@@ -114,9 +114,9 @@
 
     <section class="comp">
         <div class="comp__teams">
-            <h1>Team Training Information</h1>
-            <p>After completing a skill assessment, players can join team training sessions at their appropriate team level.</p>
-            <table class="training-table">
+            <h1 data-aos="fade-up">Team Training Information</h1>
+            <p data-aos="fade-up" data-aos-delay="100">After completing a skill assessment, players can join team training sessions at their appropriate team level.</p>
+            <table class="training-table" data-aos="fade-up" data-aos-delay="200">
                 <thead>
                     <tr>
                         <th>Group</th>
@@ -191,18 +191,27 @@
             </table>
         </div>
     </section>
+
     <hr>
+    
     <section class="footer">
         <p>@ 2025 MAS Badminton</p>
         <p>mas.bctoronto@gmail.com</p>
-        <p>1330 Castemore Ave, Markham, ON, L6E 1A4</p>
+        <p>1330 Castlemore Ave, Markham, ON, L6E 1A4</p>
     </section>
 
-    <!-- AOS library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <!-- js files -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                offset: 0,
+                once: true,
+                easing: 'ease-out'
+            });
+        });
+    </script>
     <script src="../js/header.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/main.js"></script>
