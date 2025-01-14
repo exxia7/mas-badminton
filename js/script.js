@@ -1,39 +1,33 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import courtsDiagonal from '../assets/courts diagonal.webp';
-import courtsStraight from '../assets/courts straight.webp';
-import leftArrow from '../assets/left-arrow.png';
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselImages = document.querySelector('.venue__details-courts__carousel__images');
+    const prevButton = document.querySelector('.carousel__button--prev');
+    const nextButton = document.querySelector('.carousel__button--next');
+    
+    if (carouselImages && prevButton && nextButton) {
+        const totalImages = document.querySelectorAll('.venue__details-courts__carousel__images img').length;
+        let currentIndex = 0;
 
+        const updateCarousel = () => {
+            const width = document.querySelector('.venue__details-courts__carousel').clientWidth;
+            carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
+        };
 
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateCarousel();
+        });
 
-// init AOS animation
-AOS.init({
-    duration: 1000,
-    offset: 100,
-});
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateCarousel();
+        });
 
+        // Initial update
+        updateCarousel();
 
-//carousel
-const carouselImages = document.querySelector('.venue__details-courts__carousel__images');
-const prevButton = document.querySelector('.carousel__button--prev');
-const nextButton = document.querySelector('.carousel__button--next');
-const totalImages = document.querySelectorAll('.venue__details-courts__carousel__images img').length;
-
-let currentIndex = 0;
-
-const updateCarousel = () => {
-    const width = document.querySelector('.venue__details-courts__carousel').clientWidth; // Correct width of the container
-    carouselImages.style.transform = `translateX(-${currentIndex * width}px)`; // Adjust position based on the current index
-};
-
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalImages; // Wrap around to the first image
-    updateCarousel();
-});
-
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Wrap around to the last image
-    updateCarousel();
+        // Update on window resize
+        window.addEventListener('resize', updateCarousel);
+    }
 });
 
 
