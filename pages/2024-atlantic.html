@@ -18,15 +18,15 @@
             <!-- Logo Section -->
             <div class="header__logo">
                 <a href="../index.html">
-                    <img src="../assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2);"/>
+                    <img src="../assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2); z-index: 50;"/>
                 </a>
-                <div class="header__logo-overlay"></div>
+                <div class="header__logo-overlay" style="background-color: var(--primary-color);"></div>
             </div>
 
             <!-- Mobile Menu Button -->
-            <ul class="header__menu-mobile"> 
+            <ul class="header__menu-mobile" style="background: #456c84;"> 
                 <li>
-                    <button id="menuToggle" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <button id="menuToggle" style="background: #456c84; border: none; padding: 0; cursor: pointer;">
                         <img src="../assets/menu.svg" alt="menu"/>
                     </button>
                 </li>
@@ -97,11 +97,18 @@
         <p>mas.bctoronto@gmail.com</p>
         <p>1330 Castemore Ave, Markham, ON, L6E 1A4</p>
     </section>
-    <!-- AOS library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <!-- js files -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                offset: 0,
+                once: true,
+                easing: 'ease-out'
+            });
+        });
+    </script>
     <script src="../js/header.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/main.js"></script>
