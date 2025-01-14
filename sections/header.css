@@ -92,7 +92,9 @@
     }
     
     .header__logo-overlay {
-        width: 100%; }
+        width: 100%;
+        background: #456c84;
+     }
 
     .header__menu {
         display: none;
