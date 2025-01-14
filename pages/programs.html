@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/mas-icon.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Programs - MAS Badminton</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="header__nav">
+            <!-- Logo Section -->
+            <div class="header__logo">
+            <a href="./index.html">
+                <img src="./assets/mas-logo.png" alt="logo" style="filter: invert(1) brightness(2);" data-aos="fade-down"/>
+            </a>
+            <div class="header__logo-overlay"></div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <ul class="header__menu-mobile" data-aos="fade-down"> 
+            <li>
+                <button id="menuToggle" style="background: none; border: none; padding: 0; cursor: pointer;">
+                <img src="./assets/menu.svg" alt="menu"/>
+                </button>
+            </li>
+            </ul>
+
+            <!-- Full Menu -->
+            <ul class="header__menu" id="headerMenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./programs.html">Programs</a></li>
+            <li><a href="./coaches.html">Coaches</a></li>
+            <li><a href="./achievements.html">Achievements</a></li>
+            <li><a href="./partners.html">Partners</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="programs">
+        <h1>PROGRAMS</h1>
+        <div class="programs__grid">
+            <!-- Private Lessons Card -->
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="./assets/private.png" alt="Private Lessons Icon"/>
+                </div>
+                <h2>Private Lessons</h2>
+                <p>Focus personalized coaching for players of all levels<br><br>
+                $85-$120 + HST/hour</p>
+                <ul class="program-features">
+                    <li>Learn proper skills, technique, and footwork</li>
+                    <li>Tailored and detailed feedback</li>
+                    <li>1v1 and 1v2 instruction</li>
+                    <li>Flexible scheduling</li>
+                </ul>
+            </div>
+    
+            <!-- Recreational Training Card -->
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="./assets/rec-team.png" alt="Recreational Training Icon"/>
+                </div>
+                <h2>Recreational Team</h2>
+                <p>Group classes for beginner and amateur players<br><br>
+                    $28-$30 + HST/class</p>
+                <ul class="program-features">
+                    <li>Develop fundamental skills and techniques</li>
+                    <li>Learn in a fun, group environment</li>
+                    <li>Professional coaching</li>
+                    <li>Beginner/intermediate drills</li>
+                </ul>
+            </div>
+    
+            <!-- Competition Training Card -->
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="./assets/comp-team.png" alt="Competition Training Icon"/>
+                </div>
+                <h2>Competition Team</h2>
+                <p>High-intensity team training for competition players<br><br>
+                    $30-$35 + HST/class</p>
+                <ul class="program-features">
+                    <li>Intensive drills and conditioning</li>
+                    <li>Tournament preparation</li>
+                    <li>Advanced strategy development</li>
+                    <li>Five different competition teams determined by skill</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="programs__contact">
+            <p>Players interested in joining a team higher than beginner group must complete a 5-minute skill assessment 
+                with a coach, who will evaluate your abilities to find a suitable team for your level.
+            </p>
+            <br>
+            <p>To learn more about our programs or book a consultation, please contact us:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>Email:</span> mas.bctoronto@gmail.com
+                </div>
+                <div class="contact-item">
+                    <span>WeChat ID:</span> MasBadminton
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comp">
+        <div class="comp__teams">
+            <h1>Team Training Information</h1>
+            <p>After completing a skill assessment, players can join team training sessions at their appropriate team level.</p>
+            <table class="training-table">
+                <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Level</th>
+                        <th>Days & Times</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="group-name">Beginner</td>
+                        <td>Beginner and amateur recreational players</td>
+                        <td class="schedule">
+                            Thursday: 7:00 PM - 8:30 PM<br>
+                            Saturday: 2:30 PM - 4:00 PM<br>
+                            Sunday: 1:30 PM - 3:00 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="group-name">Advanced</td>
+                        <td>Advanced recreational players</td>
+                        <td class="schedule">
+                            Saturday: 6:00 PM - 7:30 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="group-name">Pre-Team</td>
+                        <td>Players beginning to play competitively</td>
+                        <td class="schedule">
+                            Thursday: 5:00 PM - 7:00 PM<br>
+                            Sunday: 3:00 PM - 5:00 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="group-name">Junior Elite</td>
+                        <td>Competition players with stable fundamentals</td>
+                        <td class="schedule">
+                            Wednesday: 5:00 PM - 7:00 PM<br>
+                            Friday: 5:00 PM - 7:00 PM<br>
+                            Saturday: 12:00 PM - 2:00 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="group-name">Intermediate</td>
+                        <td>Competition players with refined footwork and technique</td>
+                        <td class="schedule">
+                            Wednesday: 5:00 PM - 7:00 PM<br>
+                            Friday: 5:00 PM - 7:00 PM<br>
+                            Saturday: 12:00 PM - 2:00 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="group-name">Elite</td>
+                        <td>High-performing competition players with advanced skills</td>
+                        <td class="schedule">
+                            Monday: 5:00 PM - 7:00 PM<br>
+                            Wednesday: 5:00 PM - 7:00 PM<br>
+                            Saturday: 12:00 PM - 2:00 PM<br>
+                            Sunday: 1:00 PM - 3:00 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="group-name">Diamond</td>
+                        <td>National/international level players</td>
+                        <td class="schedule">
+                            Monday: 5:00 PM - 7:00 PM<br>
+                            Wednesday: 5:00 PM - 7:00 PM<br>
+                            Saturday: 12:00 PM - 2:00 PM<br>
+                            Sunday: 1:00 PM - 3:00 PM
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <hr>
+    <section class="footer">
+        <p>@ 2025 MAS Badminton</p>
+        <p>mas.bctoronto@gmail.com</p>
+        <p>1330 Castemore Ave, Markham, ON, L6E 1A4</p>
+    </section>
+    <script src="./js/header.js" type="module"></script>
+</body>
+</html>

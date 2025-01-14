@@ -1,0 +1,164 @@
+/* Main contact section container */
+.media-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 45px;
+    padding: 40px 0px;
+}
+
+
+/* Left column */
+.not-wechat {
+    flex: 1;
+    padding-right: 40px;
+}
+
+/* Right column - WeChat */
+.contact__body__socials-info-wechat {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
+    border-radius: 8px;
+    margin-left: 0;
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+/* Heading styles */
+.contact h1 {
+    text-align: left;
+    font-size: 50px;
+    margin: 0 0 0 45px;
+    color: #fff;
+    font-family: "Lato", serif;
+    font-weight: 300;
+}
+
+/* Paragraph styles */
+.contact p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 350;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+/* Social media section */
+.contact__body__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 30px;
+}
+
+.ig-fb {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* Social media icons */
+.contact__body__socials img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1) brightness(2);
+    transition: transform 0.2s;
+}
+
+/* WeChat QR code */
+.contact__body__socials-info-wechat img {
+    max-width: 200px;
+    height: auto;
+}
+.contact__body__socials-info-wechat p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .media-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .not-wechat {
+        width: 100%;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .contact__body__socials {
+        align-items: center;
+    }
+    .contact__body__socials p {
+        text-align: center; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        padding: 15px;
+    }
+    
+    .media-body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .contact h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    
+    .not-wechat {
+        padding-right: 0;  
+    }
+    
+    .not-wechat p {
+        font-size: 16px;
+        text-align: center; 
+    }
+    
+    .contact__body__socials {
+        align-items: center;
+        width: 100%;  
+    }
+    
+    .contact__body__socials p {
+        text-align: center;  
+        width: 100%;  
+    }
+    
+    .contact__body__socials-info-wechat {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    
+    .ig-fb {
+        gap: 20px;
+        justify-content: center;  
+    }
+    
+    .contact__body__socials img {
+        width: 35px;
+        height: 35px;
+    }
+}
