@@ -88,7 +88,7 @@
 
   @media screen and (max-width: 900px) {
     .index-page .header__menu {
-        background-color: #456c84 !important;
+        background: #456c84 !important;
     }
     
     .header__logo-overlay {
