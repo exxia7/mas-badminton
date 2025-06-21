@@ -132,6 +132,141 @@
     transform: scale(0.95);
 }
 
+/* Summer camp registration section */
+.camp-registration {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 32px 0;
+    margin: 0 auto 32px auto;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.camp-registration h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+}
+
+.camp-registration a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.camp-registration h3 {
+    color: #fff;
+    background: none;
+    border: 1.5px solid #fff;
+    border-radius: 30px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 0 auto;
+    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Remove hover/focus color changes */
+.camp-registration a:hover h3,
+.camp-registration a:focus h3 {
+    background: none;
+    color: #fff;
+    border-color: #fff;
+    transform: scale(1.04);
+}
+
+/* Only change color on click (active) */
+.camp-registration a:active h3 {
+    background: #fff;
+    color: var(--primary-color, #537992);
+    border-color: #fff;
+    transform: scale(0.97);
+}
+
+/* Flexbox layout for camp-registration__flex */
+.camp-registration__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.camp-registration__poster-crop {
+    width: 320px;
+    height: 393px; /* 320 * (270/220) to maintain aspect ratio of original crop */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    display: block;
+}
+
+.camp-registration__poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.camp-registration__info {
+    flex: 1;
+    min-width: 180px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+}
+
+.camp-registration__info h2 {
+    text-align: left;
+    width: 100%;
+}
+
+.camp-registration__info a {
+    margin-top: 10px;
+}
+
+/* New camp registration button styles */
+.camp-registration__register-btn {
+    padding: 20px;
+    border-radius: 36px;
+    min-width: 180px;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: "Poppins";
+    font-size: 17px;
+    line-height: 23px;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.camp-registration__register-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.camp-registration__register-btn:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+}
+
 @media (max-width: 768px) {
     .services > h1 {
         margin-top: 25px;
@@ -170,5 +305,75 @@
 
   .services__button-learn-more-button {
     text-align: center;
+  }
+
+  .camp-registration {
+    padding: 20px 0;
+    margin: 0 auto 20px auto;
+    max-width: 98vw;
+  }
+  .camp-registration h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+  .camp-registration h3 {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .camp-registration {
+    margin: 0 40px 40px;
+    padding: 28px;
+  }
+  .camp-registration h2 {
+    font-size: 26px;
+  }
+  .camp-registration h3 {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .camp-registration {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 100vw;
+  }
+  .camp-registration__flex {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .camp-registration__poster-crop {
+    width: 100%;
+    max-width: 400px;
+    height: calc(100vw * 1.228 - 40px);
+    min-height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .camp-registration__info {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 16px;
+  }
+  .camp-registration__info h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .camp-registration__info a, .camp-registration__register-btn {
+    margin: 0 auto;
+    display: block;
   }
 }

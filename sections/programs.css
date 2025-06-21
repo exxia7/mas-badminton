@@ -248,3 +248,57 @@ tr:last-child td:first-child {
 tr:last-child td:last-child {
     border-bottom-right-radius: 12px;
 }
+
+/* Highlight Card for Summer Camp */
+.program-card--highlight {
+    grid-column: 1 / -1;
+    background: linear-gradient(90deg, #537992 60%, #6a8ca8 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+
+.program-card--highlight h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.program-card--highlight p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    font-family: "Poppins";
+}
+
+.program-card--highlight a {
+    margin-top: 0.5rem;
+}
+
+/* Full Width Card for Summer Camp */
+.program-card--full {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .program-card--highlight {
+    padding: 1.5rem 1rem 1.2rem 1rem;
+  }
+  .program-card--highlight h2 {
+    font-size: 1.3rem;
+  }
+  .program-card--highlight p {
+    font-size: 1rem;
+  }
+}
